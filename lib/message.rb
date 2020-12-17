@@ -1,17 +1,9 @@
 require 'telegram/bot'
-# require 'net/http'
-# require 'json'
 require_relative 'bot'
 
 # Class for the messages
 class Horoscope
   attr_reader :aries, :taurus, :gemini, :cancer, :leo, :virgo, :libra, :scorpio, :sagittarius, :capricorn, :aquarius, :pisces
-  # @values = nil
-
-  # def initialize
-  #   @values = horoscope
-  #   horsocope
-  # end
 
   def initialize
     @aries = 1
@@ -27,19 +19,4 @@ class Horoscope
     @aquarius = 10
     @pisces = 11
   end
-
-  # def make_the_request
-  #   url = 'https://type.fit/api/quotes'
-  #   uri = URI(url)
-  #   response = Net::HTTP.get(uri)
-  #   response = JSON.parse(response)
-  #   response
-  # end
-
-  # def select_sign(horoscope)
-  #   sign = horoscope.sample
-  #   sign
-  # end
 end
-
-# Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius and Pisces
