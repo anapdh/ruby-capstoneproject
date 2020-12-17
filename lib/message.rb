@@ -2,7 +2,7 @@ require 'telegram/bot'
 require_relative 'bot'
 
 # Class for the horoscope messages
-class Horoscope
+class ZodiacInfo
   attr_reader :aries, :taurus, :gemini, :cancer, :leo, :virgo, :libra, :scorpio, :sagittarius, :capricorn, :aquarius, :pisces
 
   def initialize

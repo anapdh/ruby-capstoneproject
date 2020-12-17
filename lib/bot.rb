@@ -6,8 +6,8 @@ class Bot
   attr_reader :token, :zodiac_sign
 
   def initialize
-    @token = '1280524818:AAHsoJ04LU76oK9UNEWUBuudlBJ_llfq034'
-    @zodiac_sign = Horoscope.new
+    @token = '1427773606:AAEtPuij38RRZeHp6cdcHtdk-Xb8lH2nokQ'
+    @zodiac_sign = ZodiacInfo.new
 
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
@@ -17,11 +17,11 @@ class Bot
 
         bot.api.send_message(chat_id: message.chat.id, text: 
           "Hello, #{message.from.first_name}!\n
-    Welcome to your Horoscope bot, created by Ana Paula Hübner!\n
+    Welcome to your Zodiac Info bot, created by Ana Paula Hübner!\n
     How to use the bot:\n 
     Use  /start to start or restart the bot\n 
     Use /stop to end the bot\n 
-    Type / + the zodiac sign you wish to obtain the horoscope of the day! Or simply select the option below:\n
+    Type '/' + the zodiac sign you wish to obtain information, or simply select the option below:\n
     /aries    /taurus    /gemini    /cancer\n
     /leo    /virgo    /libra    /scorpio\n
     /sagittarius    /capricorn    /aquarius    /pisces")
@@ -80,7 +80,7 @@ class Bot
         bot.api.send_message(chat_id: message.chat.id, text: @zodiac_sign.pisces, date: message.date)
       
         else bot.api.send_message(chat_id: message.chat.id, text: 
-        "Invalid entry, #{message.from.first_name}! Please, use /start, /stop, or the zodiac sign of yout choice.")
+        "Invalid entry, #{message.from.first_name}! Please, use /start, /stop, or '/' + the zodiac sign of your choice.")
         end
       end
     end
