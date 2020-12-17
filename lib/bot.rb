@@ -19,7 +19,7 @@ class Bot
           "Hello, #{message.from.first_name}!\n
     Welcome to your Horoscope bot, created by Ana Paula Hübner!\n
     How to use the bot:\n 
-    Use  /start to start the bot\n 
+    Use  /start to start or restart the bot\n 
     Use /stop to end the bot\n 
     Type / + the zodiac sign you wish to obtain the horoscope of the day! Or simply select the option below:\n
     /aries    /taurus    /gemini    /cancer\n
