@@ -36,10 +36,10 @@ class Horoscope
   #   response
   # end
 
-  def select_sign(sign)
-    sign = sign.sample
-    sign
-  end
+  # def select_sign(horoscope)
+  #   sign = horoscope.sample
+  #   sign
+  # end
 end
 
 # Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius and Pisces
