@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'telegram/bot'
 require_relative 'bot'
 
@@ -18,7 +20,7 @@ Lucky Color: Red
 Lucky Number: 5
 Jewelry: Ruby
 Best Match: Leo, Sagittarius and Aries
-Celebrities: Hans Christian Andersen, Jackie Chan, Mariah Carey, Marlon Brando, Dennis Quaid 
+Celebrities: Hans Christian Andersen, Jackie Chan, Mariah Carey, Marlon Brando, Dennis Quaid
 Chinese zodiac twins: Dragon"
 
     @taurus = "You chose Taurus! Let's see...\n
@@ -33,7 +35,7 @@ Lucky Number: 6
 Jewelry: Emerald, Jade
 Best Match: Capricorn, Virgo and Taurus
 Celebrities: Karl Marx, William Shakespeare, Leonardo da Vinci, David Beckham, Al Pacino
-See Also: Taurus Horoscope in 2020 
+See Also: Taurus Horoscope in 2020
 Chinese zodiac twins: Snake"
 
     @gemini = "You chose Taurus! Let's see...\n
@@ -118,7 +120,7 @@ Lucky Number: 4
 Jewelry: Jasper, Black Crystal
 Best Match: Cancer, Capricorn and Pisces
 Celebrities: Charles de Gaulle, Bill Gates, Marie Curie, Hillary Clinton, Julia Roberts, Pablo Picasso
-See Also: Scorpio Horoscope in 2020 
+See Also: Scorpio Horoscope in 2020
 Chinese zodiac twins: Pig"
 
     @sagittarius = "You chose Sagittarius! Let's see...\n
@@ -177,6 +179,6 @@ Best Match: Scorpio, Cancer and Capricorn
 Celebrities: George Washington, Zhou Enlai, Albert Einstein, Justin Bieber
 Chinese zodiac twins: Rabbit"
 
-@repeat = "\nWould you like to select another zodiac sign? /yes, /no"
+    @repeat = "\nWould you like to select another zodiac sign? /yes, /no"
   end
 end
