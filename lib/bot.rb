@@ -1,5 +1,4 @@
-# rubocop:disable Metrics/AbcSize
-# rubocop:disable Metrics/BlockLength
+# rubocop: disable Metrics/AbcSize,Metrics/BlockLength,Metrics/CyclomaticComplexity,Metrics/MethodLength
 
 require 'telegram/bot'
 require_relative 'message'
@@ -120,5 +119,4 @@ Please, use /start, /stop, or ' / ' + the zodiac sign of your choice.")
   end
 end
 
-# rubocop:enable Metrics/AbcSize
-# rubocop:enable Metrics/BlockLength
+# rubocop: enable Metrics/AbcSize,Metrics/BlockLength,Metrics/CyclomaticComplexity,Metrics/MethodLength
