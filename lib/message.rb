@@ -1,6 +1,6 @@
 # rubocop:disable Metrics/MethodLength
 # rubocop:disable Metrics/ClassLength
-# rubocop:disable Metrics/LineLength
+# rubocop:disable Layout/LineLength
 
 require 'telegram/bot'
 require_relative 'bot'
@@ -187,4 +187,4 @@ end
 
 # rubocop:enable Metrics/MethodLength
 # rubocop:enable Metrics/ClassLength
-# rubocop:enable Metrics/LineLength
+# rubocop:enable Layout/LineLength
