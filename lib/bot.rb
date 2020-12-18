@@ -3,8 +3,6 @@
 require 'telegram/bot'
 require_relative 'message'
 require_relative 'quotes'
-require 'dotenv'
-Dotenv.load('./lib/key.env')
 
 # Class for bot
 class Bot
