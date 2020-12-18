@@ -1,8 +1,4 @@
-# frozen_string_literal: true
-
-# rubocop:disable Metrics/MethodLength
-# rubocop:disable Metrics/ClassLength
-# rubocop:disable Layout/LineLength
+# rubocop:disable Metrics/MethodLength,Metrics/ClassLength,Layout/LineLength
 
 require 'telegram/bot'
 require_relative 'bot'
@@ -187,6 +183,4 @@ Chinese zodiac twins: Rabbit"
   end
 end
 
-# rubocop:enable Metrics/MethodLength
-# rubocop:enable Metrics/ClassLength
-# rubocop:enable Layout/LineLength
+# rubocop:enable Metrics/MethodLength,Metrics/ClassLength,Layout/LineLength
