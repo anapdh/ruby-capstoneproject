@@ -2,6 +2,7 @@
 
 require 'telegram/bot'
 require_relative 'message'
+require_relative 'quotes'
 
 # Class for bot
 class Bot
@@ -10,12 +11,13 @@ class Bot
   def initialize
     @token = '1427773606:AAEtPuij38RRZeHp6cdcHtdk-Xb8lH2nokQ'
     @zodiac_sign = ZodiacInfo.new
+    @quote = Quotes.new
 
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
         case message.text
 
-        when '/start'
+        when '/start', '/menu'
 
           bot.api.send_message(chat_id: message.chat.id, text:
             "Hello, #{message.from.first_name}!\n
@@ -23,6 +25,7 @@ Welcome to Ana of Zodiacs, a Ruby project created by Ana Paula Hübner.\n
 Here's how to use the bot:\n
   • Use  /start to start or restart the bot\n
   • Use /stop to end the bot when you wish\n
+  • Want to receive your quote of the day? Type /quote\n
   • Type ' / ' + the zodiac sign you wish to obtain information, or simply select one of the options below:\n
       /aries    /taurus    /gemini    /cancer\n
       /leo    /virgo    /libra    /scorpio\n
@@ -94,6 +97,11 @@ Here's how to use the bot:\n
     /aries    /taurus    /gemini    /cancer\n
     /leo    /virgo    /libra    /scorpio\n
     /sagittarius    /capricorn    /aquarius    /pisces")
+
+        when '/quote'
+    @quote.select_quote(@value)
+    bot.api.send_message(chat_id: message.chat.id, text:  @quote.select_quote(@value), date: message.date)
+    bot.api.send_message(chat_id: message.chat.id, text: @quote.menu, date: message.date)
 
         when '/stop', '/no'
     bot.api.send_message(chat_id: message.chat.id, text:
