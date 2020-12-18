@@ -1,5 +1,4 @@
-# rubocop:disable Metrics/MethodLength
-# rubocop:disable Metrics/AbcSize
+# rubocop:disable Metrics/AbcSize, Metrics/MethodLength
 
 require 'telegram/bot'
 require_relative 'message'
@@ -13,7 +12,11 @@ class Bot
     @token = env['TELEGRAM_TOKEN']
     @zodiac_sign = ZodiacInfo.new
     @quote = Quotes.new
+    show_messages
+    end
+  end
 
+  def show_messages
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
         case message.text
@@ -94,7 +97,7 @@ Here's how to use the bot:\n
 
         when '/yes'
           bot.api.send_message(chat_id: message.chat.id, text:
-            "Alright, #{message.from.first_name}, type or select another zodiac sign:\n
+            "Alright #{message.from.first_name}, type or select another zodiac sign:\n
     /aries    /taurus    /gemini    /cancer\n
     /leo    /virgo    /libra    /scorpio\n
     /sagittarius    /capricorn    /aquarius    /pisces")
@@ -112,10 +115,8 @@ Here's how to use the bot:\n
         "Invalid entry!
 Please, use /start, /stop, or ' / ' + the zodiac sign of your choice.")
         end
-      end
     end
   end
 end
 
-# rubocop:enable Metrics/MethodLength
-# rubocop:enable Metrics/AbcSize
+# rubocop:enable Metrics/AbcSize, Metrics/MethodLength
