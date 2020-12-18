@@ -28,10 +28,6 @@ Here's how to use the bot:\n
       /leo    /virgo    /libra    /scorpio\n
       /sagittarius    /capricorn    /aquarius    /pisces")
 
-        when '/stop' || '/no'
-          bot.api.send_message(chat_id: message.chat.id, text:
-            "Thanks for accessing, #{message.from.first_name}! See you next time :)", date: message.date)
-
         when '/aries'
           @zodiac_sign.aries
           bot.api.send_message(chat_id: message.chat.id, text: @zodiac_sign.aries, date: message.date)
@@ -99,6 +95,10 @@ Here's how to use the bot:\n
     /leo    /virgo    /libra    /scorpio\n
     /sagittarius    /capricorn    /aquarius    /pisces")
 
+        when '/stop', '/no'
+    bot.api.send_message(chat_id: message.chat.id, text:
+      "Thanks for accessing, #{message.from.first_name}! See you next time :)", date: message.date)
+    
         else bot.api.send_message(chat_id: message.chat.id, text:
         "Invalid entry!
 Please, use /start, /stop, or ' / ' + the zodiac sign of your choice.")
