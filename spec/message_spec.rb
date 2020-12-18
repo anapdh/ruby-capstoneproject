@@ -1,3 +1,5 @@
+# rubocop:disable Layout/LineLength
+
 require_relative '../lib/message'
 
 describe ZodiacInfo do
@@ -18,7 +20,10 @@ Lucky Number: 5
 Jewelry: Ruby
 Best Match: Leo, Sagittarius and Aries
 Celebrities: Hans Christian Andersen, Jackie Chan, Mariah Carey, Marlon Brando, Dennis Quaid
-Chinese zodiac twins: Dragon")
+Chinese zodiac twins: Dragon"
+)
     end
   end
 end
+
+# rubocop:enable Layout/LineLength

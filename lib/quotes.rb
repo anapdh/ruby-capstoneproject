@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-# rubocop:disable Metrics/MethodLength
-
 require_relative 'bot'
 require 'telegram/bot'
 
@@ -32,5 +28,3 @@ class Quotes
     @value.sample
   end
 end
-
-# rubocop:enable Metrics/MethodLength

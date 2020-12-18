@@ -1,8 +1,5 @@
-# frozen_string_literal: true
-
 # rubocop:disable Metrics/MethodLength
 # rubocop:disable Metrics/CyclomaticComplexity
-# rubocop:disable Metrics/Metrics/AbcSize
 # rubocop:disable Metrics/BlockLength
 
 require 'telegram/bot'
@@ -124,5 +121,4 @@ end
 
 # rubocop:enable Metrics/MethodLength
 # rubocop:enable Metrics/CyclomaticComplexity
-# rubocop:enable Metrics/Metrics/AbcSize
 # rubocop:enable Metrics/BlockLength
