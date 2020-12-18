@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+# rubocop:disable Metrics/MethodLength
+# rubocop:disable Metrics/ClassLength
+# rubocop:disable Metrics/LineLength
+
 require 'telegram/bot'
 require_relative 'bot'
 
@@ -182,3 +186,7 @@ Chinese zodiac twins: Rabbit"
     @repeat = "\nWould you like to select another zodiac sign? /yes, /no"
   end
 end
+
+# rubocop:enable Metrics/MethodLength
+# rubocop:enable Metrics/ClassLength
+# rubocop:enable Metrics/LineLength

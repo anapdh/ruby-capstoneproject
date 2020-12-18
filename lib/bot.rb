@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
+# rubocop:disable Metrics/MethodLength
+# rubocop:disable Metrics/CyclomaticComplexity
+# rubocop:disable Metrics/Metrics/AbcSize
+# rubocop:disable Metrics/BlockLength
+
 require 'telegram/bot'
 require_relative 'message'
 require_relative 'quotes'
@@ -23,8 +28,9 @@ class Bot
             "Hello, #{message.from.first_name}!\n
 Welcome to Ana of Zodiacs, a Ruby project created by Ana Paula Hübner.\n
 Here's how to use the bot:\n
-  • Use  /start to start or restart the bot\n
-  • Use /stop to end the bot when you wish\n
+  • Use  /start to start or the bot\n
+  • Use /menu to return to this message\n
+  • Use /stop to end the bot\n
   • Want to receive your quote of the day? Type /quote\n
   • Type ' / ' + the zodiac sign you wish to obtain information, or simply select one of the options below:\n
       /aries    /taurus    /gemini    /cancer\n
@@ -99,14 +105,14 @@ Here's how to use the bot:\n
     /sagittarius    /capricorn    /aquarius    /pisces")
 
         when '/quote'
-    @quote.select_quote(@value)
-    bot.api.send_message(chat_id: message.chat.id, text:  @quote.select_quote(@value), date: message.date)
-    bot.api.send_message(chat_id: message.chat.id, text: @quote.menu, date: message.date)
+          @quote.select_quote(@value)
+          bot.api.send_message(chat_id: message.chat.id, text: @quote.select_quote(@value), date: message.date)
+          bot.api.send_message(chat_id: message.chat.id, text: @quote.menu, date: message.date)
 
         when '/stop', '/no'
-    bot.api.send_message(chat_id: message.chat.id, text:
-      "Thanks for accessing, #{message.from.first_name}! See you next time :)", date: message.date)
-    
+          bot.api.send_message(chat_id: message.chat.id, text:
+            "Thanks for accessing, #{message.from.first_name}! See you next time :)", date: message.date)
+
         else bot.api.send_message(chat_id: message.chat.id, text:
         "Invalid entry!
 Please, use /start, /stop, or ' / ' + the zodiac sign of your choice.")
@@ -115,3 +121,8 @@ Please, use /start, /stop, or ' / ' + the zodiac sign of your choice.")
     end
   end
 end
+
+# rubocop:enable Metrics/MethodLength
+# rubocop:enable Metrics/CyclomaticComplexity
+# rubocop:enable Metrics/Metrics/AbcSize
+# rubocop:enable Metrics/BlockLength
