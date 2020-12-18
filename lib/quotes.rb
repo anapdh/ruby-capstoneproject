@@ -28,4 +28,3 @@ class Quotes
     @value.sample
   end
 end
-
