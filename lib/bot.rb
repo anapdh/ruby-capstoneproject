@@ -1,6 +1,7 @@
 # rubocop:disable Metrics/MethodLength
 # rubocop:disable Metrics/CyclomaticComplexity
 # rubocop:disable Metrics/BlockLength
+# rubocop:disable Metrics/AbcSize
 
 require 'telegram/bot'
 require_relative 'message'
@@ -20,7 +21,6 @@ class Bot
         case message.text
 
         when '/start', '/menu'
-
           bot.api.send_message(chat_id: message.chat.id, text:
             "Hello, #{message.from.first_name}!\n
 Welcome to Ana of Zodiacs, a Ruby project created by Ana Paula Hübner.\n
@@ -122,3 +122,4 @@ end
 # rubocop:enable Metrics/MethodLength
 # rubocop:enable Metrics/CyclomaticComplexity
 # rubocop:enable Metrics/BlockLength
+# rubocop:enable Metrics/AbcSize
