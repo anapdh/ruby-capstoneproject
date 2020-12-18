@@ -21,7 +21,7 @@ Jewelry: Ruby
 Best Match: Leo, Sagittarius and Aries
 Celebrities: Hans Christian Andersen, Jackie Chan, Mariah Carey, Marlon Brando, Dennis Quaid
 Chinese zodiac twins: Dragon"
-)
+      )
     end
   end
 end
