@@ -6,13 +6,12 @@ require_relative 'quotes'
 
 # Class for bot
 class Bot
-
   private
 
   attr_reader :token, :zodiac_sign
 
   def initialize
-    @token = ENV['API_KEY']
+    @token = '1427773606:AAG-Jk78nFMY2XQJdzCto3YiWRGHc_s6U1U'
     @zodiac_sign = ZodiacInfo.new
     @quote = Quotes.new
     show_messages
