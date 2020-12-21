@@ -9,7 +9,7 @@ class Bot
   attr_reader :token, :zodiac_sign
 
   def initialize(env)
-    @token = env['TELEGRAM_TOKEN']
+    @token = ENV['TELEGRAM_TOKEN']
     @zodiac_sign = ZodiacInfo.new
     @quote = Quotes.new
     show_messages
