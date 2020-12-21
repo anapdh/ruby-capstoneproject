@@ -20,11 +20,11 @@ To run the bot, you need a personal **Telegram account** and **Ruby** installed 
 ## Installation and Execution
 
   1. Download/clone this repository [GitHub Repository](https://github.com/anapdh/Ruby-CapstoneProject) on your computer.
-  2. In your terminal, use the command `cd` to go to the place where you have saved/cloned the repository. For example: _Desktop/User/Ruby-CapstoneProject/_. You may use the command `ls` to see the files and repositories existent in your current location.
-  3. Still in the terminal, run the command bundle install.
+  2. In your terminal, use the command `cd` to go to the place where you saved/cloned the repository. For example: _Desktop/User/Ruby-CapstoneProject/_. You may use the command `ls` to see the files and repositories existent in your current location.
+  3. Still in the terminal, run the command `bundle install`.
   4. Now use the command `ruby bin/main.rb` to automatically access the folder \bin and to start running the bot.
-  5. If the bot starts running successfully, you'll see the message "Hello there... The bot is running!" in the terminal.
-  [**NOTE: I know about the importance of hiding an API token in source code. Because of that, this project provides a Dotenv and a .env (+ .gitignore) file with the code as it should be to hide information, but I preferred to hardcode the token to make it easier to users and TSEs execute the code with no additional commands and complications**]
+  5. If the bot starts running successfully, you'll see the message "Hello there... The bot is running!" in your terminal.
+  [**NOTE: I know about the importance of hiding an API token in source code. Because of that, this project provides a Dotenv and a .env (+ .gitignore) file with the code as it should be to hide information, but I preferred to hardcode the token to make it easier for users and TSEs execute the code with no additional commands and complications**]
 
 ## How to use the bot
 
