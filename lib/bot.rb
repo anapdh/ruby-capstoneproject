@@ -6,6 +6,9 @@ require_relative 'quotes'
 
 # Class for bot
 class Bot
+
+  private
+
   attr_reader :token, :zodiac_sign
 
   def initialize
