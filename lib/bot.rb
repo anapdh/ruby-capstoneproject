@@ -6,7 +6,6 @@ require_relative 'quotes'
 
 # Class for bot
 class Bot
-  private
 
   attr_reader :token, :zodiac_sign
 
@@ -17,6 +16,8 @@ class Bot
     show_messages
   end
 end
+
+private
 
 def show_messages
   Telegram::Bot::Client.run(token) do |bot|
