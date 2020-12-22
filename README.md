@@ -34,7 +34,7 @@ To run the bot, you need a personal **Telegram account** and **Ruby** installed 
 
       Here's how to use the bot:
 
-      • Use  /start to start or the bot
+      • Use  /start to start or restart the bot
 
       • Use /menu to return to this message
 

@@ -28,7 +28,7 @@ def show_messages
           "Hello, #{message.from.first_name}!\n
 Welcome to Ana of Zodiacs, a Ruby project created by Ana Paula Hübner.\n
 Here's how to use the bot:\n
-  • Use  /start to start or the bot\n
+  • Use  /start to start or restart the bot\n
   • Use /menu to return to this message\n
   • Use /stop to end the bot\n
   • Want to receive your quote of the day? Type /quote\n
