@@ -28,7 +28,7 @@ To run the bot, you need a personal **Telegram account** and **Ruby** installed 
 
 ## How to use the bot
 
-  1. After making sure that the bot is running, you'll need to access the [Telegram Web](https://web.telegram.org/#/im?p=@AnaOfZodiacs_bot). This link redirects automatically to the bot page. If you want to access from your device (Telegram App), you can search for Ana of Zodiacs in the chats menu.
+  1. After making sure that the bot is running, you'll need to access the [Telegram Web](https://web.telegram.org/#/im?p=@AnaOfZodiacs_bot). This link redirects automatically to the bot page. If you want to access from your device (Telegram App), you can search for `Ana of Zodiacs` in the chats menu.
   2. The bot will request for you to start. Let's start!
   3. Simply follow to commands to access the bot features or return to the main menu:
 
@@ -58,8 +58,8 @@ To run the bot, you need a personal **Telegram account** and **Ruby** installed 
 👩🏼‍💻 **Ana Paula Hübner**
 
 - GitHub: [@anapdh](https://github.com/anapdh)
-- Twitter: [@anapdh](https://twitter.com/anapdh)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ana-paula-hübner-7a9484181)
+- Twitter: [@anapdh](https://twitter.com/dev_anahub)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/anapdh)
 
 
 ## 🤝 Contributing
