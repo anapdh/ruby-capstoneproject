@@ -58,8 +58,8 @@ To run the bot, you need a personal **Telegram account** and **Ruby** installed 
 👩🏼‍💻 **Ana Paula Hübner**
 
 - GitHub: [@anapdh](https://github.com/anapdh)
-- Twitter: [@anapdh](https://twitter.com/dev_anahub)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/anapdh)
+- Twitter: [@dev_anahub](https://twitter.com/dev_anahub)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anapdh)
 
 
 ## 🤝 Contributing
